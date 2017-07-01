@@ -1,10 +1,10 @@
-#+TITLE:Knowledgebase
-#+AUTHOR:Peter Friedrich
+#+TITLE:     Knowledgebase
+#+AUTHOR:    Peter Friedrich
 
 
 * AWK
   
-#+NAME:namenstabelle
+#+NAME: namenstabelle
 1)  Amit    Physics  80
 2)  Rahul   Maths    90
 3)  Shyam   Biology  87
