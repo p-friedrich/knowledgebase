@@ -5,14 +5,16 @@
 * AWK
   
 #+NAME: namenstabelle
+#+BEGIN_QUOTE
 1)  Amit    Physics  80
 2)  Rahul   Maths    90
 3)  Shyam   Biology  87
 4)  Kedar   English  85
 5)  Hari    History  89
+#+END_QUOTE
 
 #+BEGIN_SRC awk :stdin namenstabelle
-{print $1}
+{print $2}
 #+END_SRC
 
 #+RESULTS:
