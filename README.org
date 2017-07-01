@@ -1,5 +1,6 @@
 #+TITLE:     Knowledgebase
 #+AUTHOR:    Peter Friedrich
+#+SETUPFILE: _static/css/theme-readtheorg.setup
 
 
 * Unix Tools
@@ -9,37 +10,34 @@
    Textprocessing
 
    #+NAME: namenstabelle
-   #+CAPTION: Namenstabelle
-   #+BEGIN_QUOTE
-   1)  Amit    Physics  80
-   2)  Rahul   Maths    90
-   3)  Shyam   Biology  87
-   4)  Kedar   English  85
-   5)  Hari    History  89
-   #+END_QUOTE
+   : 1)  Amit    Physics  80
+   : 2)  Rahul   Maths    90
+   : 3)  Shyam   Biology  87
+   : 4)  Kedar   English  85
+   : 5)  Hari    History  89
 
-   #+BEGIN_SRC awk :stdin namenstabelle :results raw :exports all
+   #+BEGIN_SRC awk :stdin namenstabelle :results output :exports all
    {print $2}
    #+END_SRC
 
    #+RESULTS:
-   Amit
-   Rahul
-   Shyam
-   Kedar
-   Hari
+   : Amit
+   : Rahul
+   : Shyam
+   : Kedar
+   : Hari
 
 ** SED
-   #+BEGIN_SRC shell :stdin namenstabelle :results raw
+   #+BEGIN_SRC shell :stdin namenstabelle :results output :exports all
    sed "s/)/(/"
    #+END_SRC
 
    #+RESULTS:
-   1(  Amit    Physics  80
-   2(  Rahul   Maths    90
-   3(  Shyam   Biology  87
-   4(  Kedar   English  85
-   5(  Hari    History  89
+   : 1(  Amit    Physics  80
+   : 2(  Rahul   Maths    90
+   : 3(  Shyam   Biology  87
+   : 4(  Kedar   English  85
+   : 5(  Hari    History  89
 
 * Orgmode
  
