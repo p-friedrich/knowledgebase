@@ -2,25 +2,47 @@
 #+AUTHOR:    Peter Friedrich
 
 
-* AWK
-  
-#+NAME: namenstabelle
-#+CAPTION: Namenstabelle
-#+BEGIN_QUOTE
-1)  Amit    Physics  80
-2)  Rahul   Maths    90
-3)  Shyam   Biology  87
-4)  Kedar   English  85
-5)  Hari    History  89
-#+END_QUOTE
+* Unix Tools
+  Snippets für einige grundlegende Unixtools
 
-#+BEGIN_SRC awk :stdin namenstabelle
-{print $2}
-#+END_SRC
+** AWK
+   Textprocessing
 
-#+RESULTS:
-| Amit  |
-| Rahul |
-| Shyam |
-| Kedar |
-| Hari  |
+   #+NAME: namenstabelle
+   #+CAPTION: Namenstabelle
+   #+BEGIN_QUOTE
+   1)  Amit    Physics  80
+   2)  Rahul   Maths    90
+   3)  Shyam   Biology  87
+   4)  Kedar   English  85
+   5)  Hari    History  89
+   #+END_QUOTE
+
+   #+BEGIN_SRC awk :stdin namenstabelle :results raw :exports all
+   {print $2}
+   #+END_SRC
+
+   #+RESULTS:
+   Amit
+   Rahul
+   Shyam
+   Kedar
+   Hari
+
+** SED
+   #+BEGIN_SRC shell :stdin namenstabelle :results raw
+   sed "s/)/(/"
+   #+END_SRC
+
+   #+RESULTS:
+   1(  Amit    Physics  80
+   2(  Rahul   Maths    90
+   3(  Shyam   Biology  87
+   4(  Kedar   English  85
+   5(  Hari    History  89
+
+* Orgmode
+ 
+** Org Babel
+   Weitergabe von Blöcken als Input in andere Blöcke:
+   - Plaintext, z.B. für [[AWK]]
