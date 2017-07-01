@@ -313,3 +313,4 @@ ENV/
 # Rope project settings
 .ropeproject
 
+*.html
