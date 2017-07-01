@@ -6,7 +6,7 @@
 * Unix Tools
   Snippets für einige grundlegende Unixtools
 
-** AWK
+** =awk=
    Textprocessing
 
    #+NAME: namenstabelle
@@ -27,7 +27,7 @@
    : Kedar
    : Hari
 
-** SED
+** =sed=
    #+BEGIN_SRC shell :stdin namenstabelle :results output :exports all
    sed "s/)/(/"
    #+END_SRC
@@ -43,4 +43,4 @@
  
 ** Org Babel
    Weitergabe von Blöcken als Input in andere Blöcke:
-   - Plaintext, z.B. für [[AWK]]
+   - Plaintext, z.B. für [[=awk=]]
