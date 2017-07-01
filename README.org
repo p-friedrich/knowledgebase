@@ -5,6 +5,7 @@
 * AWK
   
 #+NAME: namenstabelle
+#+CAPTION: Namenstabelle
 #+BEGIN_QUOTE
 1)  Amit    Physics  80
 2)  Rahul   Maths    90
