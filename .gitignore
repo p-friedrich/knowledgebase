@@ -314,3 +314,5 @@ ENV/
 .ropeproject
 
 *.html
+*.tex
+*.pdf
