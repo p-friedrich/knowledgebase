@@ -28,6 +28,7 @@
    : Hari
 
 ** =sed=
+   Streameditor
    
    #+BEGIN_SRC sh :stdin namenstabelle :results output :exports all
    sed "s/)/(/"
