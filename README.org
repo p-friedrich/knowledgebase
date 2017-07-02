@@ -30,7 +30,7 @@
 ** =sed=
    Streameditor
    
-   #+BEGIN_SRC sh :stdin namenstabelle :results output :exports all
+   #+BEGIN_SRC shell :stdin namenstabelle :results output :exports all
    sed "s/)/(/"
    #+END_SRC
 
