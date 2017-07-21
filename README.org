@@ -46,3 +46,12 @@
 ** Org Babel
    Weitergabe von Blöcken als Input in andere Blöcke:
    - Plaintext, z.B. für [[=awk=]]
+*** Links
+   - [[https://github.com/dfeich/org-babel-examples]] 
+* Programmiersprachen
+** Bash
+   Shell Programmierung
+   
+   #+BEGIN_SRC shell
+   
+   #+END_SRC
